@@ -2063,9 +2063,11 @@ const ENABLE_UPDATE_CHECK = true;
 // 远端版本号来源（按序尝试，首个可解析者胜）：GitHub Raw 在中国大陆常被墙 → jsDelivr CDN 兜底
 // （其缓存可滞后 ~12h，红点可能晚亮，可接受）。只 GET 公开文件，不发送任何用户数据。
 // bust = 是否加时间戳绕缓存（Raw 要绕；jsDelivr 缓存本身就是它的意义，不绕）。
+// [rescue 2026-09-29] Original upstream namelessone88/story-oracle is unavailable (repo and
+// account both gone); repointed to this rescue mirror. Rest of the update logic is untouched.
 const SO_UPDATE_SOURCES = [
-    { url: 'https://raw.githubusercontent.com/namelessone88/story-oracle/main/manifest.json', bust: true },
-    { url: 'https://cdn.jsdelivr.net/gh/namelessone88/story-oracle@main/manifest.json', bust: false },
+    { url: 'https://raw.githubusercontent.com/BakaronLab/story-oracle-Fork/main/manifest.json', bust: true },
+    { url: 'https://cdn.jsdelivr.net/gh/BakaronLab/story-oracle-Fork@main/manifest.json', bust: false },
 ];
 /* ==================== 内置破限（1.40.0；升级 初心破限 1.2 · 2026-08-30）====================
  * 初遇《初心破限》，作者已授权《故事神谕》内置使用（Discord，2026-07-25）。内置版跟随作者更新：
@@ -18542,7 +18544,7 @@ function buildWindow() {
                     <div class="so-row so-upd-row"><span>当前版本 v${SO_VERSION}</span><span id="so-upd-status"></span></div>
                     <button type="button" id="so-upd-go" class="so-fix-run-btn" style="display:none"><i class="fa-solid fa-download"></i> 立即更新</button>
                     <label class="so-check"><input id="so-upd-auto" type="checkbox"><span>自动检查更新（打开神谕窗口时）</span></label>
-                    <div class="so-hint">检查仅读取 GitHub 上的公开版本号文件，不发送任何数据；更新通过酒馆自带的扩展更新机制完成。手动更新：<a href="https://github.com/namelessone88/story-oracle" target="_blank" rel="noopener">GitHub 仓库</a></div>
+                    <div class="so-hint">检查仅读取 GitHub 上的公开版本号文件，不发送任何数据；更新通过酒馆自带的扩展更新机制完成。手动更新：<a href="https://github.com/BakaronLab/story-oracle-Fork" target="_blank" rel="noopener">GitHub 仓库</a></div>
                 </div>
             </details>` : ''}
             <details class="so-set-group" open>
