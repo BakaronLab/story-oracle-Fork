@@ -1,5 +1,20 @@
 # 故事神谕（Story Oracle）—— SillyTavern 扩展
 
+> [!IMPORTANT]
+> **非官方抢救镜像 · Unofficial rescue mirror**
+>
+> This is an unofficial rescue mirror of `namelessone88/story-oracle`. The original GitHub repository became unavailable. This repository exists to preserve the project and provide temporary installation access for existing users. Original authorship and licensing remain unchanged. No claim of original authorship is made.
+>
+> 本仓库是 `namelessone88/story-oracle` 的**非官方抢救镜像**。原作者仓库与账号均已无法访问；本仓库的唯一目的是**保存这个项目、并为既有用户提供临时的安装来源**。原作者署名与许可证状态一律保持不变，本仓库**不主张任何原创署名**，也不代表原作者或官方。
+>
+> - 原作者 Original author：**namelessone88**
+> - 原仓库 Original repository：`https://github.com/namelessone88/story-oracle`（已不可访问 / unavailable）
+> - 本仓库 This repository：`https://github.com/BakaronLab/story-oracle-Fork`
+> - 抢救来源、证据与改动清单 Rescue details：[RESCUE_NOTICE.md](RESCUE_NOTICE.md)
+> - ⚠ **许可证状态未确认 LICENSE_STATUS=UNCLEAR**：原项目**没有附带任何许可证文件**。在原作者明确授权之前，请勿将本仓库内容用于再分发或商业用途。
+>
+> 若原作者恢复官方项目并提出要求，本抢救仓库应让位于官方上游。
+
 一个可拖动的侧边面板：连接你自定义的 **OpenAI 兼容** 端点，针对*正在进行中*的剧情向 LLM 提问。
 问答在它**独立的窗口、独立的历史**里进行——**完全不碰你的主聊天**，随时可清空。
 
